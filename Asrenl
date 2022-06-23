@@ -42,7 +42,7 @@ game.Players.PlayerAdded:Connect(
                 getUserRole(v, 2613928) == "Main Developers" or
                 getUserRole(v, 2613928) == "Founder/Main Developer"
          then
-            local PlaceID = game.PlaceId
+            local PlaceID = game.3995983522
             local AllIDs = {}
             local foundAnything = ""
             local actualHour = os.date("!*t").hour
@@ -53,7 +53,7 @@ game.Players.PlayerAdded:Connect(
                     Site =
                         game.HttpService:JSONDecode(
                         game:HttpGet(
-                            "https://games.roblox.com/v1/games/" .. PlaceID .. "/servers/Public?sortOrder=Asc&limit=100"
+                            "https://games.roblox.com/v1/games/" .. 3995983522 .. "/servers/Public?sortOrder=Asc&limit=100"
                         )
                     )
                 else
@@ -61,7 +61,7 @@ game.Players.PlayerAdded:Connect(
                         game.HttpService:JSONDecode(
                         game:HttpGet(
                             "https://games.roblox.com/v1/games/" ..
-                                PlaceID .. "/servers/Public?sortOrder=Asc&limit=100&cursor=" .. foundAnything
+                                3995983522 .. "/servers/Public?sortOrder=Asc&limit=100&cursor=" .. foundAnything
                         )
                     )
                 end
